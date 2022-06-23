@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import {
-  StatusBar,
-  StyleSheet,
-  SafeAreaView,
-  View,
-  Platform,
-} from 'react-native';
+import { StatusBar, SafeAreaView, Platform } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import { RestaurantInfoCard } from '../components/restaurant-info-card.component';
 
@@ -16,12 +10,12 @@ const ScreenSAV = styled(SafeAreaView)`
 `;
 
 const SearchContainer = styled.View`
-  padding: 10px;
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 const RestaurantInfoContainer = styled.View`
   flex: 1;
-  padding: 10px;
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 export const RestaurantsScreen = () => (
